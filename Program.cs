@@ -4,13 +4,13 @@ N = 5 -> "4, 2"
 N = 8 -> "8, 6, 4, 2"
 */
 
-const int limit = -1;
+const int limit = 1;
 int N = 0;
 List<int> evenNumbers = new();
 
 if (!InputControl())
     return;
-  
+
 DoWork(N);
 
 PrintResult();
@@ -54,7 +54,7 @@ void DoWork(int number)
     {
         evenNumbers.Add(number);
     }
-    
+
     DoWork(--number);
 }
 
