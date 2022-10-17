@@ -54,10 +54,8 @@ void DoWork(int number)
     {
         evenNumbers.Add(number);
     }
-
-    --number;
-
-    DoWork(number);
+    
+    DoWork(--number);
 }
 
 void PrintResult()
